@@ -1,0 +1,30 @@
+version: "3.8"
+
+networks:
+  tenantcashier:
+    driver: bridge
+
+services:
+  app:
+    image: indramahesa/tenant-cashier:laravel11-php8.3-swoole-alpine-production-watch
+    networks:
+      - tenantcashier
+    restart: always
+    volumes:
+      - ./app:/app
+    ports:
+      - 8000:8000
+
+  redis:
+    image: redis:alpine3.19
+    restart: always
+    ports:
+      - 6379:6379
+    command: redis-server --save 20 1 --loglevel warning
+    volumes:
+      - cache:/data
+    networks:
+      - tenantcashier
+
+volumes:
+  cache:
