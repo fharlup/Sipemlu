@@ -189,12 +189,12 @@
                       </svg><span>Master Data</span></a>
                     <ul class="sidebar-submenu">
                       <li><a href="{{ route('admin.division.index') }}">Nama Divisi</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Jenis Pemilihan</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Tahapan</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Bentuk Pengawasan</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Dugaan Pelanggaran</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Dugaan Sengketa Proses</a></li>
-                      <li><a href="{{ route('admin.division.index') }}">Validasi</a></li>
+                      <li><a href="{{ route('admin.jenis-pemilihan.index') }}">Jenis Pemilihan</a></li>
+                      <li><a href="{{ route('admin.tahapan.index') }}">Tahapan</a></li>
+                      <li><a href="{{ route('admin.bentuk-pengawasan.index') }}">Bentuk Pengawasan</a></li>
+                      <li><a href="{{ route('admin.dugaan-pelanggaran.index') }}">Dugaan Pelanggaran</a></li>
+                      <li><a href="{{ route('admin.dugaan-sengketa.index') }}">Dugaan Sengketa Proses</a></li>
+                      <li><a href="{{ route('admin.validasi.index') }}">Validasi</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list">
